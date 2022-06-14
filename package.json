@@ -1,0 +1,25 @@
+{
+  "name": "css-project",
+  "version": "1.0.0",
+  "description": "Website to practice asynchronism and CSS styles.",
+  "main": "./server/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarherreras/css-project.git"
+  },
+  "keywords": [
+    "CSS",
+    "JavaScript",
+    "fetch",
+    "API"
+  ],
+  "author": "Cesar Herrera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cesarherreras/css-project/issues"
+  },
+  "homepage": "https://github.com/cesarherreras/css-project#readme"
+}
