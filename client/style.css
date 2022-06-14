@@ -1,0 +1,174 @@
+body {
+    background-color: white;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* ========= RANDOM CATS =========*/
+#randomCats {
+    background-color: #ddd;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 380px;
+}
+
+#randomCats h2 {
+    margin: 10px 10px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px black solid;
+}
+
+.randomart {
+    float: left;
+    width: 50%;
+}   
+
+.randomart #img1{
+    padding: 35px;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+.randomart #img2{
+    padding: 35px;
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+    border-radius: 60px;
+}
+
+.btncontainer{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.btndiv{
+    clear: both;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#bton {
+    border: green 2px solid;
+    color: black;
+    padding: 4px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: -5px;
+}
+
+/* ======== HEART SHAPE BUTTON ======== */
+.randomart #bton2, .randomart #bton1 {
+    border: none;
+    background-color: #ddd;
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+ 
+ 
+.randomart #bton2::before, .randomart #bton2::after, .randomart #bton1::before, .randomart #bton1::after {
+    content: "";
+    position: absolute;
+    top: -25px;
+    width: 15px;
+    height: 25px;
+    border-radius: 10px 10px 0 0;
+    background: lightcoral;
+    }
+
+
+.randomart #bton2::before, .randomart #bton1::before {
+    left: 10px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+
+.randomart #bton2::after, .randomart #bton1::after {
+    left: -5px;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* ============== FAVORITE CATS ===========*/
+#favoriteCats {
+    background-color: #ddd;
+    margin-left: 50.8%;
+}
+
+#favoriteCats h2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+/* ============ UPLOAD IMAGE =============*/
+#uploadingImage {
+    background-color: #ddd;
+    float: left;
+    clear: left;
+    width: 50%;
+    height: 190px;
+}
+
+#uploadingImage h2{
+    text-align: center;
+    border-bottom: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+#uploadingImage #uploadingForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#uploadingImage #uploadingForm button {
+    background-color: white;
+    border: green 2px solid;
+    color: black;
+    padding: 5px;
+    width: 20%;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#uploadingImage #uploadingForm input {
+    background-color: white;
+    border: green 2px solid;
+    color: black;
+    padding: 2.5px;
+    width: 40%;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 60px;
+}

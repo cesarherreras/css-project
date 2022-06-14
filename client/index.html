@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felinos aleatorios</title>
+    <link type="text/css" rel="stylesheet" href="/css-project/client/style.css">
+</head>
+<body>
+    <div class = "header">
+    <h1>Cat Api</h1>
+    </div>
+
+    <span id = "error"></span>
+
+    <section id = "randomCats">
+        <h2>Random images</h2>
+
+        <article class = 'randomart'>
+            <div class = "imgcontainer">
+                <img id = "img1" alt="Foto de un gato aleatoria">
+            </div>
+            <div class = "btncontainer"> 
+                <button id = "bton1" type="button"></button>
+            </div>
+        </article>
+
+        <article class = 'randomart'>
+            <div class = "imgcontainer">
+                <img id = "img2" alt="Foto de un gato aleatoria"> 
+            </div>
+            <div class = "btncontainer"> 
+                <button id = "bton2" type="button" onclick="saveFavoriteImage()"></button>
+            </div>
+        </article>
+
+        <div class = "btndiv">
+            <button id = "bton" type="button" onclick="loadRandomImages()">Change pictures</button>
+        </div>
+    </section>
+
+    <section id = "uploadingImage">
+        <h2>Upload your image</h2>
+        <form id = "uploadingForm">
+            <input id = "file" type="file" name="file"/>
+            <button type="button" onclick="uploadImage()">Upload</button>
+        </form>
+    </section>
+
+    <section id = "favoriteCats">
+        <h2>Favorite images</h2>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/css-project/server/main.js"></script>
+</body>
+</html>
