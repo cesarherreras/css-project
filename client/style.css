@@ -1,6 +1,6 @@
-body {
+html {
     background-color: white;
-    font-family: Arial;
+    font-family: Red Hat Display;
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@ body {
     margin: 10px 10px;
     padding: 5px;
     text-align: center;
-    border-bottom: 1px black solid;
+    border-bottom: 2px gray solid;
 }
 
 .randomart {
@@ -36,20 +36,26 @@ body {
     width: 50%;
 }   
 
+.imgcontainer {
+    text-align: center;
+}
+
 .randomart #img1{
-    padding: 35px;
-    width: 100%;
+    padding: 25px;
+    width: 80%;
     height: 250px;
     box-sizing: border-box;
     border-radius: 60px;
+    background-size: cover !important;
 }
 
 .randomart #img2{
-    padding: 35px;
-    width: 100%;
+    padding: 25px;
+    width: 80%;
     height: 250px;
     box-sizing: border-box;
     border-radius: 60px;
+    background-size: cover !important;
 }
 
 .btncontainer{
@@ -66,7 +72,7 @@ body {
 }
 
 #bton {
-    border: green 2px solid;
+    border: 3px gray solid;
     color: black;
     padding: 4px;
     text-align: center;
@@ -89,7 +95,7 @@ body {
 .randomart #bton2::before, .randomart #bton2::after, .randomart #bton1::before, .randomart #bton1::after {
     content: "";
     position: absolute;
-    top: -25px;
+    top: -15px;
     width: 15px;
     height: 25px;
     border-radius: 10px 10px 0 0;
@@ -137,7 +143,7 @@ body {
 
 #uploadingImage h2{
     text-align: center;
-    border-bottom: 1px black solid;
+    border-bottom: 2px gray solid;
     padding: 10px;
     margin: 10px;
 }
@@ -150,7 +156,7 @@ body {
 
 #uploadingImage #uploadingForm button {
     background-color: white;
-    border: green 2px solid;
+    border: 3px gray solid;
     color: black;
     padding: 5px;
     width: 20%;
@@ -162,7 +168,7 @@ body {
 
 #uploadingImage #uploadingForm input {
     background-color: white;
-    border: green 2px solid;
+    border: 3px gray solid;
     color: black;
     padding: 2.5px;
     width: 40%;

@@ -123,7 +123,7 @@ async function loadFavoriteImages(){
         image.style.borderRadius = "30px"
 
         //Agregar estilo a los botones
-        button.style.border = "red 2px solid";
+        button.style.border = "3px gray solid";
         button.style.color = "black";
         button.style.padding = "2px";
         button.style.width = "25%";
@@ -134,7 +134,7 @@ async function loadFavoriteImages(){
         button.style.marginTop = "10px";
 
         //Agregar estilo a h2
-        h2.style.borderBottom = "1px black solid";
+        h2.style.borderBottom = "2px gray solid";
         return item.image.url;
     });
     }
